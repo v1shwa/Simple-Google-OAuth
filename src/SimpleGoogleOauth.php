@@ -127,7 +127,7 @@ class SimpleGoogleOAuth
 	 */
 	public function getAttr($key)
 	{
-		if (array_key_exists($key, $configuration))
+		if (array_key_exists($key, $this->configuration))
 			return $this->configuration[$key];
 		else 
 			throw new Exception("Configuration Key $key doesn't exist");
